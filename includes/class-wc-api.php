@@ -379,6 +379,7 @@ class WC_API {
 		include_once( 'abstracts/abstract-wc-rest-controller.php' );
 		include_once( 'abstracts/abstract-wc-rest-posts-controller.php' );
 		include_once( 'abstracts/abstract-wc-rest-terms-controller.php' );
+		include_once( 'abstracts/abstract-wc-rest-settings-api-controller.php' );
 
 		// REST API controllers.
 		include_once( 'api/class-wc-rest-coupons-controller.php' );
@@ -403,9 +404,8 @@ class WC_API {
 		include_once( 'api/class-wc-rest-webhooks-controller.php' );
 
 		// Settings API.
-		include_once( 'api/wc-rest-settings-base.php' );
-		include_once( 'api/wc-rest-settings-groups-controller.php' );
-		include_once( 'api/wc-rest-settings-controller.php' );
+		include_once( 'api/class-wc-rest-settings-groups-controller.php' );
+		include_once( 'api/class-wc-rest-settings-controller.php' );
 	}
 
 	/**
