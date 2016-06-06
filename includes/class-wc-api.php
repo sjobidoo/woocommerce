@@ -401,6 +401,11 @@ class WC_API {
 		include_once( 'api/class-wc-rest-taxes-controller.php' );
 		include_once( 'api/class-wc-rest-webhook-deliveries.php' );
 		include_once( 'api/class-wc-rest-webhooks-controller.php' );
+
+		// Settings API.
+		include_once( 'api/wc-rest-settings-base.php' );
+		include_once( 'api/wc-rest-settings-groups-controller.php' );
+		include_once( 'api/wc-rest-settings-controller.php' );
 	}
 
 	/**
@@ -426,6 +431,8 @@ class WC_API {
 			'WC_REST_Report_Sales_Controller',
 			'WC_REST_Report_Top_Sellers_Controller',
 			'WC_REST_Reports_Controller',
+			'WC_REST_Settings_Controller',
+			'WC_REST_Settings_Groups_Controller',
 			'WC_REST_Tax_Classes_Controller',
 			'WC_REST_Taxes_Controller',
 			'WC_REST_Webhook_Deliveries_Controller',
